@@ -44,33 +44,33 @@ public class UserStory_14_Logout {
 
 
     @Test
-    public void test1() {
+    public void helpdesk35test() {
 
         System.out.println("Running test1");
     }
 
     @Test
-    public void test2() {
+    public void helpdesk36test() {
         System.out.println("Running test2");
     }
 
     @Test
-    public void test3() {
+    public void marketing35test() {
         System.out.println("Running test3");
     }
 
     @Test
-    public void test4() {
+    public void marketing36test() {
         System.out.println("Running test4");
     }
 
     @Test
-    public void test5() {
+    public void hr35test() {
         System.out.println("Running test5");
     }
 
     @Test
-    public void test6() {
+    public void hr36test() {
         System.out.println("Running test6");
     }
 

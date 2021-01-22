@@ -12,29 +12,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class G18_67_Asign_HighPriority {
+public class G18_67_Asign_HighPriority extends LoginInfo{
 
-    WebDriver driver;
-
-    @BeforeTest
-    public void Login() {
-
-        driver = WebDriverFactory.getDriver("chrome");
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-
-        driver.get("https://login2.nextbasecrm.com/login");
-
-
-    }
-
+    LoginInfo log= new LoginInfo();
 
     // Click on "Task" module
 
 
     @Test
     public void TaskPriority() throws InterruptedException {
-
+       log.LogIn();
         WebElement userName = driver.findElement(By.name("USER_LOGIN"));
 //        ArrayList<String> userList = new ArrayList<>();
 //        userList.add("hr35@cybertekschool.com");

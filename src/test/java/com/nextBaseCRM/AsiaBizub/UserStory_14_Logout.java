@@ -18,6 +18,7 @@ public class UserStory_14_Logout {
         //Open chrome browser
         // Set up
 
+
         driver = WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);

@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 public class LoginInfo {
 
-
+//testing from github
    public WebDriver driver;
 
     public void LogIn( ) {

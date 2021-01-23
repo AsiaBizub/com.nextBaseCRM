@@ -14,41 +14,14 @@ import org.testng.annotations.Test;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-public class Ceate_New_Task {
+public class Ceate_New_Task extends LoginInfo{
 
-    WebDriver driver;
-
-    @BeforeTest
-    public void Login() {
-
-        driver = WebDriverFactory.getDriver("chrome");
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-
-        driver.get("https://login2.nextbasecrm.com/login");
-
-
-    }
-
+    LoginInfo log= new LoginInfo();
 
     // Click on "Task" module
 
-
     @Test
     public void newTask() throws InterruptedException {
-
-        WebElement userName = driver.findElement(By.name("USER_LOGIN"));
-
-//        "hr35@cybertekschool.com"
-//        "hr36@cybertekschool.com"
-//        "marketing35@cybertekschool.com"
-//        "marketing36@cybertekschool.com"
-//        "helpdesk35@cybertekschool.com"
-//        "helpdesk36@cybertekschool.com"
-
-        userName.sendKeys("hr35@cybertekschool.com");
-        WebElement password = driver.findElement(By.name("USER_PASSWORD"));
-        password.sendKeys("UserUser", Keys.ENTER);
 
 
         WebElement taskTab = driver.findElement(By.xpath("//li[@id='bx_left_menu_menu_tasks']"));//xpath("//a[@title='Tasks']"));//linkText("Tasks"));

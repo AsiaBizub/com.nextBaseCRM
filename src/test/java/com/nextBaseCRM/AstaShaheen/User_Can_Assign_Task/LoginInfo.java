@@ -12,8 +12,8 @@ import java.util.concurrent.TimeUnit;
 
 public class LoginInfo {
 
-
-    WebDriver driver;
+//testing from github
+   public WebDriver driver;
 
     public void LogIn( ) {
 
@@ -26,6 +26,14 @@ public class LoginInfo {
 
         WebElement userName = driver.findElement(By.name("USER_LOGIN"));
         userName.sendKeys("hr35@cybertekschool.com");
+
+//        "hr35@cybertekschool.com"
+//        "hr36@cybertekschool.com"
+//        "marketing35@cybertekschool.com"
+//        "marketing36@cybertekschool.com"
+//        "helpdesk35@cybertekschool.com"
+//        "helpdesk36@cybertekschool.com"
+
         WebElement password = driver.findElement(By.name("USER_PASSWORD"));
         password.sendKeys("UserUser", Keys.ENTER);
     }

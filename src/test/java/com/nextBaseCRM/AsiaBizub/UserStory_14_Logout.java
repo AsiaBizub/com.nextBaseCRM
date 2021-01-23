@@ -1,82 +1,10 @@
 package com.nextBaseCRM.AsiaBizub;
 
-import com.nextBaseCRM.utilities.WebDriverFactory;
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
-
-import java.util.concurrent.TimeUnit;
-
 public class UserStory_14_Logout {
 
 
 
-        // Verify title equals: Authorization
-        //Expected login page
 
-        String expectedTitle = "Authorization";
-
-        String actualTitle = driver.getTitle();
-
-        if (actualTitle.equals(expectedTitle)) {
-            System.out.println("Verification of the title page passed!");
-        } else {
-            System.err.println("Verification of the title page failed!");
-            System.out.println("Expected Title: " + expectedTitle);
-            System.out.println("Actual Title: " + actualTitle);
-        }
-    }
-
-
-    @Test
-    public void helpdesk35test() {
-
-        System.out.println("Running test1");
-    }
-
-    @Test
-    public void helpdesk36test() {
-        System.out.println("Running test2");
-    }
-
-    @Test
-    public void marketing35test() {
-        System.out.println("Running test3");
-    }
-
-    @Test
-    public void marketing36test() {
-        System.out.println("Running test4");
-    }
-
-    @Test
-    public void hr35test() {
-        System.out.println("Running test5");
-    }
-
-    @Test
-    public void hr36test() {
-        System.out.println("Running test6");
-    }
-
-    @AfterClass
-    public void tearDownClass(){
-        driver.close();
-    }
-
-}
-
-/*
-
-        //4. Enter username:
-        // We need to locate the login input box and then sendKeys(userName) to it:
-        //driver.findElement(By)).sendKeys(); username
-
-        //5. Enter password:
-        // We need to locate the password input box then sendKeys (password) to it:
-        //driver.findElement(By)).sendKeys(); password
-    }
 }
 
 /*
@@ -89,13 +17,8 @@ Verify users can logout and return back to login page.
 Scenario:
 Users (hr, marketing and helpdesk) able to logout under user email
 
-Credentials:
-         UserName                 Password                QA
-helpdesk35@cybertekschool.com     UserUser      login2.nextbasecrm.com
-helpdesk36@cybertekschool.com     UserUser	    login2.nextbasecrm.com
-marketing35@cybertekschool.com    UserUser      login2.nextbasecrm.com
-marketing36@cybertekschool.com	  UserUser	    login2.nextbasecrm.com
-hr35@cybertekschool.com           UserUser      login2.nextbasecrm.com
-hr36@cybertekschool.com           UserUser      login2.nextbasecrm.com
+See LoginInfo for WebElements & LoginInfo
+See Drivers for chrome drivers
+See ThreadSleep for handling
 
  */

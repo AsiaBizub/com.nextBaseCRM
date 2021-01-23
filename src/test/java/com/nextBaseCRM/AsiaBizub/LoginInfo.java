@@ -1,6 +1,6 @@
 package com.nextBaseCRM.AsiaBizub;
 
-public class LoginInfo {
+public class LoginInfo extends Drivers {
     // Environment
     public static final String url = "https://login2.nextbasecrm.com";
 
@@ -25,7 +25,5 @@ public class LoginInfo {
 
     //Password
     String password = "UserUser";
-
-
 
 }

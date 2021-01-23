@@ -5,14 +5,14 @@ public class LoginInfo extends Drivers {
     public static final String url = "https://login2.nextbasecrm.com";
 
     //Login WebElements
-    String loginBox ;
-    String passwordBox ;
-    String rememberMeBox;
-    String loginButton;
+    //String loginBox ;
+    //String passwordBox ;
+    //String rememberMeBox;
+    //String loginButton;
 
     //Logout WebElements
-    String profileAvatarButton;
-    String logoutButton;
+    //String profileAvatarButton;
+    //String logoutButton;
 
     //Login Credentials
     //Username

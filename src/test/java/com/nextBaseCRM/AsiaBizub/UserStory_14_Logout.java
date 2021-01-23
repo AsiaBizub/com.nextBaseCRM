@@ -27,7 +27,7 @@ public class UserStory_14_Logout {
         // Go to: https://login2.nextbasecrm.com
         driver.get("https://login2.nextbasecrm.com");
 
-        // Verify title equals:
+        // Verify title equals: Authorization
         //Expected login page
 
         String expectedTitle = "Authorization";

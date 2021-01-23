@@ -10,22 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 public class UserStory_14_Logout {
 
-    WebDriver driver;
 
-    @BeforeClass
-    public void setUpMethod() {
-
-        //Open chrome browser
-        // Set up
-
-
-        driver = WebDriverFactory.getDriver("chrome");
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-
-
-        // Go to: https://login2.nextbasecrm.com
-        driver.get("https://login2.nextbasecrm.com");
 
         // Verify title equals: Authorization
         //Expected login page

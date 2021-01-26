@@ -1,40 +1,22 @@
-package com.nextBaseCRM.AstaShaheen.User_Can_Assign_Task;
+package com.nextBaseCRM.AstaShaheen.Story_10TaskTab;
 
-import com.nextBaseCRM.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class G18_67_Asign_HighPriority extends LoginInfo{
+public class Asign_HighPriority extends LoginInfo {
 
-    LoginInfo log= new LoginInfo();
 
     // Click on "Task" module
 
 
     @Test
     public void TaskPriority() throws InterruptedException {
-       log.LogIn();
-        WebElement userName = driver.findElement(By.name("USER_LOGIN"));
-//        ArrayList<String> userList = new ArrayList<>();
-//        userList.add("hr35@cybertekschool.com");
-//        userList.add("hr36@cybertekschool.com");
-//        userList.add("marketing35@cybertekschool.com");
-//        userList.add("marketing36@cybertekschool.com");
-//        userList.add("helpdesk35@cybertekschool.com");
-//        userList.add("helpdesk36@cybertekschool.com");
-        //      for (String each : userList) {
-        userName.sendKeys("hr35@cybertekschool.com");
-        WebElement password = driver.findElement(By.name("USER_PASSWORD"));
-        password.sendKeys("UserUser", Keys.ENTER);
-
+        LogIn();
 
         WebElement taskTab = driver.findElement(By.xpath("//li[@id='bx_left_menu_menu_tasks']"));//xpath("//a[@title='Tasks']"));//linkText("Tasks"));
         taskTab.click();
@@ -95,8 +77,6 @@ public class G18_67_Asign_HighPriority extends LoginInfo{
     @AfterTest
     public void tearDown() {
 
-
-        driver.quit();
     }
-}
 
+}

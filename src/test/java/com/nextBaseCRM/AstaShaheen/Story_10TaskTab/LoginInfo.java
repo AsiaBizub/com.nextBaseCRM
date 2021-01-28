@@ -1,21 +1,19 @@
-package com.nextBaseCRM.AstaShaheen.User_Can_Assign_Task;
+package com.nextBaseCRM.AstaShaheen.Story_10TaskTab;
 
 import com.nextBaseCRM.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
 public class LoginInfo {
 
 //testing from github
-   public WebDriver driver;
+   public static WebDriver driver;
 
-    public void LogIn( ) {
+    public static void LogIn() {
 
 
         driver = WebDriverFactory.getDriver("chrome");
@@ -36,6 +34,8 @@ public class LoginInfo {
 
         WebElement password = driver.findElement(By.name("USER_PASSWORD"));
         password.sendKeys("UserUser", Keys.ENTER);
+
+
     }
 
 }

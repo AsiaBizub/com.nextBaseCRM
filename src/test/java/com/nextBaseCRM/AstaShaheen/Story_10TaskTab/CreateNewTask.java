@@ -1,31 +1,33 @@
-package com.nextBaseCRM.AstaShaheen.User_Can_Assign_Task;
+package com.nextBaseCRM.AstaShaheen.Story_10TaskTab;
 
 import com.github.javafaker.Faker;
-import com.nextBaseCRM.utilities.WebDriverFactory;
 import org.junit.BeforeClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-public class Ceate_New_Task extends LoginInfo{
+public class CreateNewTask extends LoginInfo{
 
-    LoginInfo log= new LoginInfo();
+
+
 
     // Click on "Task" module
 
     @Test
     public void newTask() throws InterruptedException {
+     LogIn();
+
 
 
         WebElement taskTab = driver.findElement(By.xpath("//li[@id='bx_left_menu_menu_tasks']"));//xpath("//a[@title='Tasks']"));//linkText("Tasks"));
         taskTab.click();
+
         WebElement newTask = driver.findElement(By.xpath(" //a[@id='tasks-buttonAdd']"));
         newTask.click();
         WebElement iFrame = driver.findElement(By.xpath("//iframe[@class='side-panel-iframe']"));
